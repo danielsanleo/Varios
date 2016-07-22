@@ -1,3 +1,4 @@
+ <?php
  function RestarHoras($horaini,$horafin) {
 
 			$horai=substr($horaini,0,2);
@@ -24,3 +25,4 @@
 			return date("H-i-s",mktime($difh,$difm,$difs));
 		}
 
+?>
