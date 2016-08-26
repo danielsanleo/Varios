@@ -1,0 +1,12 @@
+<script type="text/javascript">
+  function FinalizarYProgramar() {
+		var monthNames = [ "01", "02", "03", "04", "05", "06","07", "08", "09", "10", "11", "12" ];
+	    var today = new Date();
+		var date = prompt("Introduce una fecha.", today.getFullYear()+"-"+monthNames[today.getMonth()]+"-"+today.getDate());
+
+		if (date != null) {
+			x = "Hello! You have entered date as: " + date;
+			document.getElementById("demo").innerHTML = x;
+		}
+	  }
+</script>
