@@ -1,5 +1,3 @@
 <?php
-$fecha = date('Y-m-j');
-$nuevafecha = strtotime ( '+3 month' , strtotime ( $fecha ) ) ;
-$nuevafecha = date ( 'Y-m-j' , $nuevafecha );
+$fecha_vencimiento = DateTime::createFromFormat('d/m/Y', '16/12/2016') -> modify("+5 month") -> format('Y-m-d');
 ?>
