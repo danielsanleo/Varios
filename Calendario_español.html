@@ -7,7 +7,7 @@
 
 
 <label for="fecha">
-	<input type="text" id="fecha" value="" />
+	<input type="text" id="fecha" value="">
 </label>
                   
 <script>
@@ -28,8 +28,10 @@
   showMonthAfterYear: false,
   yearSuffix: ''
   };
+	
   $.datepicker.setDefaults($.datepicker.regional['es']);
+	
   $(function () {
-  $("#fecha").datepicker();
+  	$("#fecha").datepicker();
   });
 </script>
